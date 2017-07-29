@@ -1,0 +1,68 @@
+uuid: 5ce54d52-4411-4b42-81f0-fd319af8fd13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.layout_entity.three_column.field_first
+    - field.field.layout_entity.three_column.field_second
+    - field.field.layout_entity.three_column.field_third
+    - layout_entity.layout_entity_type.three_column
+  module:
+    - field_layout
+    - layout_discovery
+    - paragraphs
+third_party_settings:
+  field_layout:
+    id: layout_threecol_33_34_33
+    settings: {  }
+id: layout_entity.three_column.default
+targetEntityType: layout_entity
+bundle: three_column
+mode: default
+content:
+  field_first:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: first
+  field_second:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: second
+  field_third:
+    type: entity_reference_paragraphs
+    weight: 3
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: third
+  name:
+    type: string_textfield
+    weight: 0
+    region: top
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  user_id: true

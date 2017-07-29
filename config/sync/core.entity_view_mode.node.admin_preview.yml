@@ -1,0 +1,12 @@
+uuid: eeec3be7-378f-49ef-8174-290a51f6e1b5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: fAE1lMEF3oTOjZ0drWxt47iAd78Zoay90FyV5YQhR7Y
+id: node.admin_preview
+label: 'Admin Preview'
+targetEntityType: node
+cache: true

@@ -1,0 +1,32 @@
+uuid: 106cce24-d741-482a-ab41-f3784f692924
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.layout_entity.one_column.field_primary
+    - layout_entity.layout_entity_type.one_column
+  module:
+    - entity_reference_revisions
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: layout_entity.one_column.default
+targetEntityType: layout_entity
+bundle: one_column
+mode: default
+content:
+  field_primary:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden:
+  name: true
+  user_id: true

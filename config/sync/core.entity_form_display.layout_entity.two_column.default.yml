@@ -1,0 +1,55 @@
+uuid: 6334f879-0360-4af7-8d40-784034175011
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.layout_entity.two_column.field_primary
+    - field.field.layout_entity.two_column.field_secondary
+    - layout_entity.layout_entity_type.two_column
+  module:
+    - field_layout
+    - layout_discovery
+    - paragraphs
+third_party_settings:
+  field_layout:
+    id: layout_twocol
+    settings: {  }
+id: layout_entity.two_column.default
+targetEntityType: layout_entity
+bundle: two_column
+mode: default
+content:
+  field_primary:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: first
+  field_secondary:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: second
+  name:
+    type: string_textfield
+    weight: 0
+    region: top
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  user_id: true

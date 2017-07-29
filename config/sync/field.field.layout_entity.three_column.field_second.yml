@@ -1,0 +1,31 @@
+uuid: 1c3f2f3e-0868-4fdd-8a95-bf60e0d913ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.layout_entity.field_second
+    - layout_entity.layout_entity_type.three_column
+  module:
+    - entity_reference_revisions
+id: layout_entity.three_column.field_second
+field_name: field_second
+entity_type: layout_entity
+bundle: three_column
+label: Second
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    target_bundles_drag_drop:
+      quote:
+        weight: 3
+        enabled: false
+      text:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

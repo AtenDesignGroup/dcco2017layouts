@@ -1,0 +1,6 @@
+uuid: 29eb7c4b-1dcc-4429-bd6d-e96f7aeb1b63
+langcode: en
+status: true
+dependencies: {  }
+id: one_column
+label: 'One Column'

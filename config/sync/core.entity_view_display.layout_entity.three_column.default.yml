@@ -1,0 +1,52 @@
+uuid: 23252a92-f5ce-4f73-b79b-bc140c6630a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.layout_entity.three_column.field_first
+    - field.field.layout_entity.three_column.field_second
+    - field.field.layout_entity.three_column.field_third
+    - layout_entity.layout_entity_type.three_column
+  module:
+    - entity_reference_revisions
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_threecol_33_34_33
+    settings: {  }
+id: layout_entity.three_column.default
+targetEntityType: layout_entity
+bundle: three_column
+mode: default
+content:
+  field_first:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: first
+  field_second:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: second
+  field_third:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: third
+hidden:
+  name: true
+  user_id: true

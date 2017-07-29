@@ -1,0 +1,42 @@
+uuid: 5eca2548-0546-4cba-8bba-a3ba2223c0d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.layout_entity.one_column.field_primary
+    - layout_entity.layout_entity_type.one_column
+  module:
+    - field_layout
+    - layout_discovery
+    - paragraphs
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: layout_entity.one_column.default
+targetEntityType: layout_entity
+bundle: one_column
+mode: default
+content:
+  field_primary:
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  user_id: true

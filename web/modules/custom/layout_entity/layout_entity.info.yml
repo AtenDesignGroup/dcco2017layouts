@@ -1,0 +1,5 @@
+name: Layout Entity
+type: module
+description: 'Provides a custom entity type for creating layouts. Best used with Inline Entity Form and Paragraphs.'
+core: 8.x
+package: Aten Custom

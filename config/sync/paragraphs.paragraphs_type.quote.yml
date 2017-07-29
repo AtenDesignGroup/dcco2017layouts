@@ -1,0 +1,7 @@
+uuid: b6f23cbd-7767-4f1b-b9a0-1aa0767abd33
+langcode: en
+status: true
+dependencies: {  }
+id: quote
+label: Quote
+behavior_plugins: {  }

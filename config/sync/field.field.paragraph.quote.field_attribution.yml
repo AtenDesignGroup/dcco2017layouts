@@ -1,0 +1,23 @@
+uuid: a320240a-487e-4272-81c0-62ad61dda4d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_attribution
+    - paragraphs.paragraphs_type.quote
+  module:
+    - link
+id: paragraph.quote.field_attribution
+field_name: field_attribution
+entity_type: paragraph
+bundle: quote
+label: Attribution
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 2
+field_type: link

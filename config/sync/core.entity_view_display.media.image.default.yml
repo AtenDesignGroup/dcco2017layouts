@@ -1,0 +1,35 @@
+uuid: cb18d7e0-f320-4e26-88b2-493b1ce1d1e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_image
+    - image.style.large
+    - media_entity.bundle.image
+  module:
+    - field_layout
+    - image
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: media.image.default
+targetEntityType: media
+bundle: image
+mode: default
+content:
+  thumbnail:
+    type: image
+    weight: 0
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    region: content
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_image: true
+  name: true
+  uid: true

@@ -1,0 +1,42 @@
+uuid: 6103f360-009b-4b61-a941-03d174374242
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.layout_entity.two_column.field_primary
+    - field.field.layout_entity.two_column.field_secondary
+    - layout_entity.layout_entity_type.two_column
+  module:
+    - entity_reference_revisions
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_twocol
+    settings: {  }
+id: layout_entity.two_column.default
+targetEntityType: layout_entity
+bundle: two_column
+mode: default
+content:
+  field_primary:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: first
+  field_secondary:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: second
+hidden:
+  name: true
+  user_id: true

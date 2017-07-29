@@ -1,0 +1,32 @@
+uuid: 63fc2d28-c67b-48fc-bf18-fddf50827374
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.paragraphs_demo.field_content
+    - node.type.paragraphs_demo
+  module:
+    - entity_reference_revisions
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.paragraphs_demo.default
+targetEntityType: node
+bundle: paragraphs_demo
+mode: default
+content:
+  field_content:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  links: true

@@ -1,0 +1,18 @@
+
+# Layout Entity menu items definition
+entity.layout_entity.collection:
+  title: 'Layout Entity list'
+  route_name: entity.layout_entity.collection
+  description: 'List Layout Entity entities'
+  parent: system.admin_structure
+  weight: 100
+
+
+# Layout Entity type menu items definition
+entity.layout_entity_type.collection:
+  title: 'Layout Entity type'
+  route_name: entity.layout_entity_type.collection
+  description: 'List Layout Entity type (bundles)'
+  parent: system.admin_structure
+  weight: 99
+

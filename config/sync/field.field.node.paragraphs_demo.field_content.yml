@@ -1,0 +1,31 @@
+uuid: c3ecbd91-ec7f-47ee-917b-aa768dfb05c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.paragraphs_demo
+  module:
+    - entity_reference_revisions
+id: node.paragraphs_demo.field_content
+field_name: field_content
+entity_type: node
+bundle: paragraphs_demo
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    target_bundles_drag_drop:
+      quote:
+        weight: 3
+        enabled: false
+      text:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

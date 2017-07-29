@@ -1,0 +1,32 @@
+uuid: 073ef52d-869e-4b80-aa67-c6188d335974
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_layouts
+    - layout_entity.layout_entity_type.one_column
+    - layout_entity.layout_entity_type.three_column
+    - layout_entity.layout_entity_type.two_column
+    - node.type.page
+id: node.page.field_layouts
+field_name: field_layouts
+entity_type: node
+bundle: page
+label: Layouts
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:layout_entity'
+  handler_settings:
+    target_bundles:
+      one_column: one_column
+      three_column: three_column
+      two_column: two_column
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: one_column
+field_type: entity_reference

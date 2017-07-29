@@ -1,0 +1,33 @@
+add layout entity entities:
+  title: 'Create new Layout Entity entities'
+
+administer layout entity entities:
+  title: 'Administer Layout Entity entities'
+  description: 'Allow to access the administration form to configure Layout Entity entities.'
+  restrict access: true
+
+delete layout entity entities:
+  title: 'Delete Layout Entity entities'
+
+edit layout entity entities:
+  title: 'Edit Layout Entity entities'
+
+access layout entity overview:
+  title: 'Access the Layout Entity overview page'
+
+view published layout entity entities:
+  title: 'View published Layout Entity entities'
+
+view unpublished layout entity entities:
+  title: 'View unpublished Layout Entity entities'
+
+view all layout entity revisions:
+  title: 'View all Layout Entity revisions'
+
+revert all layout entity revisions:
+  title: 'Revert all Layout Entity revisions'
+  description: 'Role requires permission <em>view Layout Entity revisions</em> and <em>edit rights</em> for layout entity entities in question or <em>administer layout entity entities</em>.'
+
+delete all layout entity revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Layout Entity revisions</em> and <em>delete rights</em> for layout entity entities in question or <em>administer layout entity entities</em>.'

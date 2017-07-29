@@ -1,0 +1,24 @@
+uuid: f6502615-9569-4d3a-b1f0-86122e019464
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.paragraphs_demo
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.paragraphs_demo.teaser
+targetEntityType: node
+bundle: paragraphs_demo
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

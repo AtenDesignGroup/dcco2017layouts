@@ -1,0 +1,7 @@
+uuid: 4beb8096-1f45-4257-9c7c-901b223fff74
+langcode: en
+status: true
+dependencies: {  }
+id: media
+label: Media
+behavior_plugins: {  }

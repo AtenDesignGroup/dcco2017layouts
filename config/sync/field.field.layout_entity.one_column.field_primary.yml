@@ -1,0 +1,31 @@
+uuid: 521a6e4c-436e-487a-82c9-c836a4d991dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.layout_entity.field_primary
+    - layout_entity.layout_entity_type.one_column
+  module:
+    - entity_reference_revisions
+id: layout_entity.one_column.field_primary
+field_name: field_primary
+entity_type: layout_entity
+bundle: one_column
+label: Primary
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    target_bundles_drag_drop:
+      quote:
+        weight: 3
+        enabled: false
+      text:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

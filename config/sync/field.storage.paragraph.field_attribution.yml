@@ -1,0 +1,19 @@
+uuid: 36dda7eb-40d8-4e30-81c0-0b0f0611a7f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+id: paragraph.field_attribution
+field_name: field_attribution
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
